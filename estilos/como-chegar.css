@@ -65,10 +65,6 @@ section.esq {
     grid-template-columns: 2fr 2fr;
     height: 600px;
 }
-section.esq img {
-    border: 1px solid black;
-    width: 100%;
-}
 div.conteudo {
     display: flex;
     justify-content: center;
@@ -86,4 +82,9 @@ div.conteudo p {
     text-align: center;
     font-weight: 300;
     width: 500px;
+}
+div.img {
+    background-image: url(../imagens/barca-manga.webp);
+    background-size: cover;
+    background-position: center center;
 }
