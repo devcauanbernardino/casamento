@@ -1,1 +1,89 @@
 @charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+
+:root {
+  --cor001: #fefaf0;
+  --cor002: #f5f3cd;
+  --cor003: #f7f4d2;
+
+  --fonte-titulo: "Fraunces", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--fonte-titulo);
+}
+body {
+  background-color: var(--cor001);
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  margin: auto;
+}
+header > a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 10px;
+  font-family: var(--fonte-titulo);
+  font-weight: 200;
+  border-radius: 100%;
+}
+header > p {
+    font-family: var(--fonte-titulo);
+    font-weight: 200;
+}
+header > a:hover {
+  text-decoration: underline;
+}
+section.frente {
+    font-family: var(--fonte-titulo);
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section.frente h1 {
+    font-weight: 300;
+    font-size: 3.5em;
+    padding: 10px;
+}
+section.frente p {
+    font-weight: 200;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+section.esq {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    height: 600px;
+}
+section.esq img {
+    border: 1px solid black;
+    width: 100%;
+}
+div.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid black;
+}
+div.conteudo h2{
+    margin: 20px;
+    font-size: 2em;
+    font-weight: 300;
+}
+div.conteudo p {
+    text-align: center;
+    font-weight: 300;
+    width: 500px;
+}

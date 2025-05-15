@@ -19,11 +19,9 @@ body {
 }
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 10px;
-  margin: auto;
-  width: 1000px;
 }
 header > a {
   text-decoration: none;
@@ -58,10 +56,6 @@ section.frente {
   background-position: center bottom;
   background-size: cover;
   background-attachment: fixed;
-}
-section.frente > img {
-  margin: auto;
-  width: 500px;
 }
 img {
     display: block;
