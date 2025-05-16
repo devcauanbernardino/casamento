@@ -60,12 +60,12 @@ section.frente p {
     text-align: center;
 }
 
-section.esq {
+section.content {
     display: grid;
     grid-template-columns: 2fr 2fr;
     height: 600px;
 }
-div.conteudo {
+div.conteudo-dir {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,18 +73,43 @@ div.conteudo {
     padding: 20px;
     border: 1px solid black;
 }
-div.conteudo h2{
+div.conteudo-dir h2{
     margin: 20px;
     font-size: 2em;
     font-weight: 300;
 }
-div.conteudo p {
+div.conteudo-dir p {
     text-align: center;
     font-weight: 300;
     width: 500px;
 }
-div.img {
-    background-image: url(../imagens/barca-manga.webp);
+div.img-esq {
+    background-image: url(../imagens/mangaratiba.jpg);
     background-size: cover;
     background-position: center center;
+    border: 1px solid black;
+}
+div.conteudo-esq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid black;
+}
+div.conteudo-esq h2 {
+    margin: 20px;
+    font-size: 2em;
+    font-weight: 300;
+}
+div.conteudo-esq p {
+    text-align: center;
+    font-weight: 300;
+    width: 500px;
+}
+div.img-dir {
+    background-image: url(../imagens/conceicao-jac.jpg);
+    background-size: cover;
+    background-position: center center;
+    border: 1px solid black;
 }
