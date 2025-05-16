@@ -51,8 +51,8 @@ h1 {
 
 section.frente {
   margin: auto;
-  width: 1000px;
-  height: 700px;
+  width: 100%;
+  height: 800px;
   background-image: url(../imagens/lidinha-frente.avif);
   background-position: center bottom;
   background-size: cover;
