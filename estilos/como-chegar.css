@@ -48,6 +48,8 @@ section.frente {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 1000px;
+    margin: auto;
 }
 section.frente h1 {
     font-weight: 300;
@@ -89,6 +91,12 @@ div.img-esq {
     background-position: center center;
     border: 1px solid black;
 }
+div.img-esq-2 {
+    background-image: url(../imagens/flex-angra.webp);
+    background-size: cover;
+    background-position: center center;
+    border: 1px solid black;
+}
 div.conteudo-esq {
     display: flex;
     justify-content: center;
@@ -107,9 +115,75 @@ div.conteudo-esq p {
     font-weight: 300;
     width: 500px;
 }
+div.conteudo-esq a {
+    text-decoration: none;
+    color: black;
+    font-family: var(--fonte-titulo);
+    font-weight: bold;
+}
+div.conteudo-esq a:hover {
+    text-decoration: underline;
+}
+div.conteudo-esq li {
+    list-style: none;
+}
 div.img-dir {
     background-image: url(../imagens/conceicao-jac.jpg);
     background-size: cover;
     background-position: center center;
     border: 1px solid black;
+}
+div.img-dir-2 {
+    background-image: url(../imagens/transfers.jpg);
+    background-size: cover;
+    background-position: center center;
+    border: 1px solid black;
+}
+div.img-esq-3 {
+    background-image: url(../imagens/hospedagem.png&quot);
+    background-size: cover;
+    background-position: center center;
+    border: 1px solid black;
+}
+div.conteudo-dir a {
+    text-decoration: none;
+    color: black;
+    font-family: var(--fonte-titulo);
+    font-weight: bold;
+}
+div.conteudo-dir a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    height: 300px;
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+}
+
+footer h2 {
+    font-size: 2em;
+    font-weight: 200;
+    padding: 10px;
+    font-family: var(--fonte-titulo);
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    section.frente {
+        width: 500px;
+    }
+
+    section.content {
+        display: block;
+    }
+
+    footer {
+        width: 500px;
+    }
+
 }
