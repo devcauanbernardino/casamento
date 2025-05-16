@@ -57,6 +57,7 @@ section.frente {
   background-position: center bottom;
   background-size: cover;
   background-attachment: fixed;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.445);
 }
 img {
   display: block;
