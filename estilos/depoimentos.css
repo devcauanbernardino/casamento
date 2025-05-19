@@ -153,4 +153,7 @@ footer h2 {
     section.mensagem h2 {
         text-align: center;
     }
+    hr {
+        width: 100vw;
+    }
 }
