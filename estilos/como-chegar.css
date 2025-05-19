@@ -24,6 +24,7 @@ header {
   align-items: center;
   padding: 10px;
   margin: auto;
+  font-size: 1.2em;
 }
 header > a {
   text-decoration: none;
@@ -43,15 +44,25 @@ header > a:hover {
 }
 span {
   cursor: pointer;
+  z-index: 1000;
 }
 span:hover {
   color: rgb(117, 114, 114);
 }
 menu {
   display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 500px;
+  height: 100%;
+  text-align: center;
+  background-color: var(--cor002);
+  padding-top: 60px;
 }
 menu > ul > li {
   list-style: none;
+  padding: 10px;
 }
 menu > ul > li > a {
   text-decoration: none;
