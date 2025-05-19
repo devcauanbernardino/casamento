@@ -154,6 +154,9 @@ footer h2 {
         text-align: center;
     }
     hr {
-        width: 100vw;
+        width: 90vw;
+    }
+    footer {
+        width: 90vw;
     }
 }
