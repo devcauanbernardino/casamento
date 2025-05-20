@@ -14,11 +14,10 @@
   margin: 0;
   padding: 0;
 }
-
-body {
-  overflow-x: hidden;
-  background-color: var(--cor001);
+main {
+    background-color: var(--cor002);
 }
+
 header {
   display: flex;
   justify-content: space-around;
@@ -75,68 +74,77 @@ menu > ul > li > a:hover {
   color: rgb(95, 93, 93);
 }
 
-section.frente {
+section#frente {
+    background-color: var(--cor002);
+    height: 700px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+div#foto {
+    background-image: url(../imagens/dresscode.jpg);
+    height: 600px;
+    width: 80vw;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     flex-direction: column;
-    height: 500px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.527);
 }
-section.frente h1 {
+div#texto {
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    width: 600px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+div#texto h1, h2 {
     font-family: var(--fonte-titulo);
-    font-size: 2.5em;
     font-weight: 300;
+    font-size: 2.5em;
 }
-section.frente p {
-    font-family: var(--fonte-titulo);
-    font-weight: 200;
-    font-size: 1.5em;
+div#texto h2 {
+    font-size: 1.8em;
 }
 section.mensagem {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 500px;
     background-color: var(--cor002);
-    font-family: var(--fonte-titulo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 }
-section.mensagem h2 {
-    font-weight: 300;
-    font-size: 2.3em;
+div.caixa {
     padding: 40px;
 }
-section.mensagem label {
-    font-size: 1em;
-    font-weight: 250;
-    line-height: 2;
-}
-input#iname {
-    width: 200px;
-    height: 20px;
-}
-input#imen {
-    width: 300px;
-    height: 100px;
-}
-input#submit {
-    background-color: rgb(148, 143, 143);
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: 20px;
+div.caixa h1 {
+    font-family: var(--fonte-titulo);
+    font-weight: 400;
+    font-size: 2.6em;
     text-align: center;
-    border: 1px solid black;
 }
-input#submit:hover {
-    background-color: rgb(94, 94, 94);
-    color: rgb(204, 203, 203);
+
+div.caixa p {
+    font-weight: 200;
+    font-family: var(--fonte-titulo);
+    font-size: 1.4em;
+    text-align: center;
+    width: 800px;
+}
+div#par p {
+    text-align: justify;
 }
 footer {
-  width: 1000px;
-  margin: auto;
-  margin-top: 80px;
+    background-color: white;
+    width: 1000px;
+    margin: auto;
+    padding-top: 40px;
 }
 footer h2 {
   font-family: var(--fonte-titulo);
@@ -147,16 +155,25 @@ footer h2 {
 }
 
 @media screen and (max-width: 768px) {
-    section.frente {
-        text-align: center;
+    div#foto {
+        align-items: center;
     }
-    section.mensagem h2 {
-        text-align: center;
+    div#texto {
+        width: 300px;
     }
-    hr {
-        width: 90vw;
+    div.caixa {
+        width: 90%;
+        padding: 20px;
     }
+
+    div.caixa p {
+        width: 100%;
+    }
+
     footer {
-        width: 90vw;
-    }
+    display: block;
+    padding-top: 50px;
+    width: 90%;
+  }
 }
+    
