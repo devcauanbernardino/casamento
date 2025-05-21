@@ -217,8 +217,35 @@ footer h2 {
     padding-top: 50px;
     width: 90%;
   }
+}
 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    header {
+    padding: 20px;
+    font-size: 1.1em;
+  }
 
+  div#caixa-fir h1 {
+    font-size: 2.2em;
+  }
+  
+  div#caixa-fir p,
+  div#texto p {
+    font-size: 1.1em;
+  }
+  div#img {
+    width: 400px;
+    height: 400px;
+  }
+  div#texto h2,
+  section#localizacao h2 {
+    font-size: 2em;
+  }
 
-
+  footer {
+    display: block;
+    padding-top: 50px;
+    width: 90%;
+  }
+    
 }
