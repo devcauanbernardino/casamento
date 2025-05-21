@@ -208,6 +208,12 @@ footer h2 {
     section.frente {
     width: 90vw;
   }
+  menu#itens {
+    display: flex;
+    width: 360px;
+    justify-content: center;
+    margin: auto;
+  }
 
   section.frente h1 {
     font-size: 2.5em;
