@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+
+:root {
+  --cor001: #fefaf0;
+  --cor002: #f5f3cd;
+  --cor003: #f7f4d2;
+
+  --fonte-titulo: "Fraunces", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+    font-family: var(--fonte-titulo);
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  font-size: 1.2em;
+}
+header > a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 10px;
+  font-family: var(--fonte-titulo);
+  font-weight: 200;
+  border-radius: 100%;
+}
+header > p {
+  font-family: var(--fonte-titulo);
+  font-weight: 200;
+}
+header > a:hover {
+  text-decoration: underline;
+}
+span {
+  cursor: pointer;
+  z-index: 1000;
+}
+span:hover {
+  color: rgb(117, 114, 114);
+}
+menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 500px;
+  height: 100%;
+  text-align: center;
+  background-color: var(--cor002);
+  padding-top: 60px;
+}
+
+menu > ul > li {
+  list-style: none;
+  padding: 10px;
+}
+menu > ul > li > a {
+  text-decoration: none;
+  color: black;
+  font-family: var(--fonte-titulo);
+  font-weight: 200;
+}
+menu > ul > li > a:hover {
+  color: rgb(95, 93, 93);
+}
+section#container-fir {
+    background-color: #EFECE1;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div#caixa-fir {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+}
+div#caixa-fir h1 {
+    font-size: 2.5em;
+    font-weight: 300;
+}
+div#caixa-fir p {
+    font-size: 1.3em;
+    font-weight: 200;
+}
+div#caixa2 {
+    background-color: #706E5C;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    width: 450px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.521);
+}
+div#caixa2 a {
+    color: white;
+    text-decoration: none;
+}
+div#caixa2 a:hover{
+    text-decoration: underline;
+}
+section#secaoimg {
+    background-color: #d4d1b0;
+    height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.555);
+}
+div#img {
+    background-image: url(../imagens/aliança.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 600px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.616);
+}
+
+div#texto h2 {
+    font-weight: 300;
+    font-size: 2.1em;
+}
+div#texto p {
+    font-weight: 200;
+    font-size: 1.3em;
+}
+
+section#localizacao {
+    background-color: #EFECE1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 700px;
+}
+section#localizacao h2 {
+    font-weight: 300;
+    font-size: 2.1em;
+    padding: 15px;
+}
+footer {
+  width: 1000px;
+  margin: auto;
+  padding-top: 20px;
+}
+footer h2 {
+  font-family: var(--fonte-titulo);
+  font-size: 30px;
+  font-weight: 300;
+  padding: 20px;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  menu {
+    display: flex;
+    width: 360px;
+    justify-content: center;
+    margin: auto;
+  }
+  div#caixa-fir {
+    width: 300px;
+  }
+  div#caixa-fir h1 {
+    font-size: 2em;
+  }
+
+  div#caixa-fir p,
+  div#texto p {
+    font-size: 1em;
+    width: 300px;
+    text-align: center;
+  }
+  div#caixa2 {
+    text-align: center;
+    width: 300px;
+  }
+  section#secaoimg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: none;
+  }
+  div#texto {
+    padding-top: 30px;
+    text-align: center;
+  }
+  div#img {
+    width: 300px;
+    height: 300px;
+  }
+  div#texto h2 {
+    font-size: 1.5em;
+  }
+  iframe {
+    width: 300px;
+  }
+  footer {
+    display: block;
+    padding-top: 50px;
+    width: 90%;
+  }
+
+
+
+
+}

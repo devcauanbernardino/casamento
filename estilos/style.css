@@ -270,8 +270,11 @@ footer h2 {
     flex-direction: row;
     gap: 10px;
   }
-  menu {
-    text-align: center;
+  menu#itens {
+    display: flex;
+    width: 360px;
+    justify-content: center;
+    margin: auto;
   }
   section.frente {
     width: 100%;
