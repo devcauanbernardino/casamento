@@ -151,10 +151,7 @@ footer h2 {
         text-align: center;
     }
     menu#itens {
-    display: flex;
     width: 360px;
-    justify-content: center;
-    margin: auto;
   }
     section.mensagem h2 {
         text-align: center;

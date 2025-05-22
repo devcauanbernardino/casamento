@@ -170,10 +170,7 @@ footer h2 {
   }
 
   menu#itens {
-    display: flex;
     width: 360px;
-    justify-content: center;
-    margin: auto;
   }
   div#caixa-fir {
     width: 300px;
@@ -222,7 +219,7 @@ footer h2 {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 992px) {
     header {
     padding: 20px;
     font-size: 1.1em;

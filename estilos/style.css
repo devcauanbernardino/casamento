@@ -271,10 +271,7 @@ footer h2 {
     gap: 10px;
   }
   menu#itens {
-    display: flex;
     width: 360px;
-    justify-content: center;
-    margin: auto;
   }
   section.frente {
     width: 100%;

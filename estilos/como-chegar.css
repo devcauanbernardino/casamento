@@ -209,10 +209,7 @@ footer h2 {
     width: 90vw;
   }
   menu#itens {
-    display: flex;
     width: 360px;
-    justify-content: center;
-    margin: auto;
   }
 
   section.frente h1 {

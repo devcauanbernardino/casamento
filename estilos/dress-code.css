@@ -159,10 +159,7 @@ footer h2 {
         align-items: center;
     }
     menu#itens {
-    display: flex;
     width: 360px;
-    justify-content: center;
-    margin: auto;
   }
     div#texto {
         width: 300px;
