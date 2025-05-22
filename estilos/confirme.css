@@ -163,6 +163,8 @@ footer h2 {
   text-align: left;
 }
 
+
+/* TELEFONES */
 @media screen and (max-width: 768px) {
     header {
     flex-direction: row;
@@ -219,7 +221,9 @@ footer h2 {
   }
 }
 
-@media screen and (min-width: 992px) {
+
+/* DESKTOPS */
+@media screen and (min-width: 992px){
     header {
     padding: 20px;
     font-size: 1.1em;
@@ -234,7 +238,7 @@ footer h2 {
     font-size: 1.1em;
   }
   div#img {
-    width: 400px;
+    width: 600px;
     height: 400px;
   }
   div#texto h2,

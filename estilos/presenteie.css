@@ -14,8 +14,8 @@
   margin: 0;
   padding: 0;
 }
-main {
-    background-color: var(--cor002);
+body {
+    font-family: var(--fonte-titulo);
 }
 
 header {
@@ -73,17 +73,20 @@ menu > ul > li > a {
 menu > ul > li > a:hover {
   color: rgb(95, 93, 93);
 }
-
+div.titulo {
+    background-color: var(--cor001);
+    text-align: center;
+    font-size: 0.8em;
+    padding-top: 30px;
+}
 section#frente {
     background-color: var(--cor002);
-    height: 700px;
-    display: flex;
+    height: 80vh;display: flex;
     justify-content: center;
     align-items: center;
-
 }
 div#foto {
-    background-image: url(../imagens/dresscode.jpg);
+    background-image: url(../imagens/presentes.jpg);
     height: 600px;
     width: 80vw;
     background-size: cover;
@@ -112,71 +115,43 @@ div#texto h1, h2 {
 div#texto h2 {
     font-size: 1.8em;
 }
-section.mensagem {
+div#texto p {
+    font-weight: 200;
+}
+section#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row; */
+    background-color: var(--cor001);
+}
+div.presentes {
     background-color: var(--cor002);
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    margin: auto;
+    flex-direction: row;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.521);
+    border-radius: 10px;
+    width: 700px;
+    height: 300px;
+    margin-top: 60px;
 }
-div.caixa {
-    padding: 40px;
+div.presentes > img {
+    border-radius: 10px 0 0 10px;
+    height: 300px;
 }
-div.caixa h1 {
-    font-family: var(--fonte-titulo);
-    font-weight: 400;
-    font-size: 2.6em;
+div.presentes h3 {
+    font-weight: 300;
+}
+div.texto {
+    font-weight: 300;
+    font-size: 1.2em;
     text-align: center;
 }
-
-div.caixa p {
+div.texto p {
     font-weight: 200;
-    font-family: var(--fonte-titulo);
-    font-size: 1.4em;
-    text-align: center;
-    width: 800px;
 }
-div#par p {
-    text-align: justify;
-}
-footer {
-    background-color: white;
-    width: 1000px;
-    margin: auto;
-    padding-top: 40px;
-}
-footer h2 {
-  font-family: var(--fonte-titulo);
-  font-size: 30px;
-  font-weight: 300;
-  padding: 20px;
-  text-align: left;
-}
-
-@media screen and (max-width: 768px) {
-    div#foto {
-        align-items: center;
-    }
-    menu#itens {
-    width: 360px;
-  }
-    div#texto {
-        width: 300px;
-    }
-    div.caixa {
-        width: 90%;
-        padding: 20px;
-    }
-
-    div.caixa p {
-        width: 100%;
-    }
-
-    footer {
-    display: block;
-    padding-top: 50px;
-    width: 90%;
-  }
-}
-    
