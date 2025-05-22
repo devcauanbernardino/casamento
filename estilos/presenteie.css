@@ -156,3 +156,34 @@ div.texto {
 div.texto p {
     font-weight: 200;
 }
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: row;
+    gap: 10px;
+  }
+  menu#itens {
+    width: 360px;
+  }
+
+  div#foto {
+        align-items: center;
+    }
+    div#texto {
+        width: 350px;
+        text-align: center;
+        height: 200px;
+  }
+  section#container {
+    grid-template-columns: 1fr;
+  }
+  div.presentes {
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+  }
+  div.presentes > img {
+    width: 400px;
+    border-radius: 10px 10px 0 0;
+  }
+}
