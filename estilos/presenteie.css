@@ -81,7 +81,8 @@ div.titulo {
 }
 section#frente {
     background-color: var(--cor002);
-    height: 80vh;display: flex;
+    height: 700px;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
