@@ -128,20 +128,21 @@ section#container {
     background-color: var(--cor001);
 }
 div.presentes {
-    background-color: var(--cor002);
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.521);
-    border-radius: 10px;
     width: 700px;
     height: 300px;
     margin: 50px;
+    background-color: var(--cor002);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.486);
+    border-radius: 10px;
 }
 div.presentes > img {
     border-radius: 10px 0 0 10px;
     height: 300px;
+    width: 50%;
 }
 div.presentes h3 {
     font-weight: 300;
@@ -150,6 +151,8 @@ div.texto {
     font-weight: 300;
     font-size: 1.2em;
     text-align: center;
+    width: 50%;
+    height: auto;
 }
 div.texto p {
     font-weight: 200;
@@ -231,10 +234,11 @@ div.texto {
 div.presentes {
     flex-direction: column;
     width: 300px;
-    height: 650px;
+    height: 800px;
 }
 div.presentes > img {
     width: 100%;
+    height: inherit;
     border-radius: 10px 10px 0 0;
 }
 section.final {
@@ -252,5 +256,11 @@ footer {
 }
 
 @media screen and (min-width: 992px) {
-  
+  div.presentes {
+    height: 400px;
+    margin: 50px;
+  }
+  div.presentes img {
+    height: 100%;
+  }
 }
