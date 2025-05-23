@@ -254,8 +254,10 @@ div.col a {
   border-radius: 10px;
 }
 footer {
-  width: 1000px;
-  margin: auto;
+    background-color: white;
+    width: 1000px;
+    margin: auto;
+    padding-top: 40px;
 }
 footer h2 {
   font-family: var(--fonte-titulo);

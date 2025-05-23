@@ -123,10 +123,6 @@ section#container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-    /* display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row; */
     background-color: var(--cor001);
 }
 div.presentes {
@@ -139,7 +135,7 @@ div.presentes {
     border-radius: 10px;
     width: 700px;
     height: 300px;
-    margin-top: 60px;
+    margin: 50px;
 }
 div.presentes > img {
     border-radius: 10px 0 0 10px;
@@ -156,34 +152,96 @@ div.texto {
 div.texto p {
     font-weight: 200;
 }
+section#meio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cor001);
+}
 
+section.final {
+  background-color: var(--cor002);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 400px;
+}
+section.final > div.segundo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 1.2em;
+  font-weight: 200;
+}
+div.primeiro {
+  margin: 20px;
+  text-align: center;
+}
+div.primeiro p {
+  font-weight: 200;
+  font-size: 1.1em;
+}
+div.block {
+  margin: 20px;
+}
+
+footer {
+    background-color: white;
+    width: 1000px;
+    margin: auto;
+    padding-top: 40px;
+}
+footer h2 {
+  font-family: var(--fonte-titulo);
+  font-size: 30px;
+  font-weight: 300;
+  padding: 20px;
+  text-align: left;
+}
 @media screen and (max-width: 768px) {
   header {
     flex-direction: row;
     gap: 10px;
-  }
+}
   menu#itens {
     width: 360px;
-  }
+}
 
-  div#foto {
-        align-items: center;
-    }
-    div#texto {
-        width: 350px;
-        text-align: center;
-        height: 200px;
-  }
+div#foto {
+    align-items: center;
+}
+div#texto {
+    width: 350px;
+    text-align: center;
+    height: 200px;
+}
+div.titulo {
+  padding: 10px;
+}
   section#container {
     grid-template-columns: 1fr;
-  }
+}
+div.texto {
+  padding: 20px;
+}
   div.presentes {
     flex-direction: column;
-    width: 400px;
-    height: 600px;
-  }
+    width: 300px;
+    height: 650px;
+}
   div.presentes > img {
-    width: 400px;
+    width: 100%;
     border-radius: 10px 10px 0 0;
   }
+  div.segundo {
+    padding: 10px;
+    text-align: center;
+  }
+  footer {
+    display: block;
+    padding-top: 50px;
+    width: 90%;
+}
 }
