@@ -17,7 +17,9 @@
 body {
     font-family: var(--fonte-titulo);
 }
-
+main {
+  background-color: var(--cor001);
+}
 header {
   display: flex;
   justify-content: space-around;
@@ -226,22 +228,29 @@ div.titulo {
 div.texto {
   padding: 20px;
 }
-  div.presentes {
+div.presentes {
     flex-direction: column;
     width: 300px;
     height: 650px;
 }
-  div.presentes > img {
+div.presentes > img {
     width: 100%;
     border-radius: 10px 10px 0 0;
-  }
-  div.segundo {
+}
+section.final {
+    height: 550px;
+}
+div.segundo {
     padding: 10px;
     text-align: center;
-  }
-  footer {
+}
+footer {
     display: block;
     padding-top: 50px;
     width: 90%;
 }
+}
+
+@media screen and (min-width: 992px) {
+  
 }
