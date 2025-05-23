@@ -236,6 +236,9 @@ div.presentes {
     width: 300px;
     height: 800px;
 }
+div.texto img {
+  width: 100px;
+}
 div.presentes > img {
     width: 100%;
     height: inherit;
@@ -260,7 +263,8 @@ footer {
     height: 300px;
     margin: 50px;
   }
-  div.presentes img {
-    height: 100%;
+  div.texto img {
+    height: 100px;
+    width: 100px
   }
 }
