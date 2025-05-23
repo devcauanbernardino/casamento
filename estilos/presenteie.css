@@ -257,7 +257,7 @@ footer {
 
 @media screen and (min-width: 992px) {
   div.presentes {
-    height: 400px;
+    height: 300px;
     margin: 50px;
   }
   div.presentes img {
