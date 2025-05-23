@@ -254,7 +254,7 @@ div.col a {
   border-radius: 10px;
 }
 footer {
-    background-color: white;
+    background-color: var(--cor001);
     width: 1000px;
     margin: auto;
     padding-top: 40px;
