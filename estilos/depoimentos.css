@@ -149,6 +149,7 @@ footer h2 {
 @media screen and (max-width: 768px) {
     section.frente {
         text-align: center;
+        font-size: 0.8em;
     }
     menu#itens {
     width: 360px;
