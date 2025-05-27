@@ -259,6 +259,12 @@ footer {
 }
 
 @media screen and (min-width: 992px) {
+  section#meio {
+    margin: 60px;
+  }
+  section#container {
+    margin: 60px;
+  }
   div.presentes {
     height: 300px;
     margin: 20px;
