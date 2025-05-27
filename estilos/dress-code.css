@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+
+:root {
+  --cor001: #fefaf0;
+  --cor002: #f5f3cd;
+  --cor003: #f7f4d2;
+
+  --fonte-titulo: "Fraunces", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+main {
+    background-color: var(--cor002);
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  font-size: 1.2em;
+}
+header > a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding: 10px;
+  font-family: var(--fonte-titulo);
+  font-weight: 200;
+  border-radius: 100%;
+}
+header > p {
+  font-family: var(--fonte-titulo);
+  font-weight: 200;
+}
+header > a:hover {
+  text-decoration: underline;
+}
+span {
+  cursor: pointer;
+  z-index: 1000;
+}
+span:hover {
+  color: rgb(117, 114, 114);
+}
+menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 500px;
+  height: 100%;
+  text-align: center;
+  background-color: var(--cor002);
+  padding-top: 60px;
+}
+
+menu > ul > li {
+  list-style: none;
+  padding: 10px;
+}
+menu > ul > li > a {
+  text-decoration: none;
+  color: black;
+  font-family: var(--fonte-titulo);
+  font-weight: 200;
+}
+menu > ul > li > a:hover {
+  color: rgb(95, 93, 93);
+}
+
+section#frente {
+    background-color: var(--cor002);
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+div#foto {
+    background-image: url(../imagens/dresscode.jpg);
+    height: 600px;
+    width: 80vw;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.527);
+}
+div#texto {
+    display: flex;
+    background-color: var(--cor001);
+    flex-direction: column;
+    width: 600px;
+    height: 150px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+div#texto h1, h2 {
+    font-family: var(--fonte-titulo);
+    font-weight: 300;
+    font-size: 2.5em;
+}
+div#texto h2 {
+    font-size: 1.8em;
+}
+section.mensagem {
+    background-color: var(--cor002);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+div.caixa {
+    padding: 40px;
+}
+div.caixa h1 {
+    font-family: var(--fonte-titulo);
+    font-weight: 400;
+    font-size: 2.6em;
+    text-align: center;
+}
+
+div.caixa p {
+    font-weight: 200;
+    font-family: var(--fonte-titulo);
+    font-size: 1.4em;
+    text-align: center;
+    width: 800px;
+}
+div#par p {
+    text-align: justify;
+}
+footer {
+    background-color: white;
+    width: 1000px;
+    margin: auto;
+    padding-top: 40px;
+}
+footer h2 {
+  font-family: var(--fonte-titulo);
+  font-size: 30px;
+  font-weight: 300;
+  padding: 20px;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    div#foto {
+        align-items: center;
+    }
+    menu#itens {
+    width: 360px;
+  }
+  div#texto {
+        width: 300px;
+  }
+    div.caixa {
+        width: 90%;
+        padding: 20px;
+    }
+
+    div.caixa p {
+        width: 100%;
+    }
+
+    footer {
+    display: block;
+    padding-top: 50px;
+    width: 90%;
+  }
+}
+    
