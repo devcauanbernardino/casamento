@@ -259,16 +259,14 @@ footer {
 }
 
 @media screen and (min-width: 992px) {
-  section#meio {
-    margin: 60px;
-  }
-  section#container {
-    margin: 60px;
-  }
   div.presentes {
     height: 300px;
+    width: 500px;
     margin: 20px;
     margin-top: 50px;
+  }
+  div.texto {
+    display: block;
   }
   div.texto img {
     height: 100px;
