@@ -267,6 +267,7 @@ footer {
   }
   div.texto {
     display: block;
+    font-size: 1em;
   }
   div.texto img {
     height: 100px;
